@@ -1,0 +1,2 @@
+name,email,phone,billing_address,shipping_address,opening_balance,tax_number,opening_balance_type,credit_period,credit_limit
+Supplier,demosupplier@gmail.com,9898989898,india,india,1000,,receive,

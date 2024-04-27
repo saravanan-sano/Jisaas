@@ -1,0 +1,3 @@
+product,unit,category,brand,item_code,quantity,purchase_price,sales_price,mrp,tax,subtotal,hsn_sac_code,tax_type
+Bru ,Pack,coffee,BRU,1312312312,10,90,100,120,12,900,,exclusive
+water bottle,Liter,water,nice,,1,110,120,120,12,110,,inclusive

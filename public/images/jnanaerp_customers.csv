@@ -1,0 +1,2 @@
+name,email,phone,billing_address,shipping_address,opening_balance,opening_balance_type,credit_period,credit_limit
+Demo Customer,erp@jnanain.com,7092727092,india,india,100,pay,30,1000
