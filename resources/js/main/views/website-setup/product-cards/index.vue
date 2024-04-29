@@ -156,7 +156,7 @@
 </template>
 <script>
 import { onMounted, watch } from "vue";
-import AddEdit from "./AddEdit";
+import AddEdit from "./AddEdit.vue";
 import {
     EyeOutlined,
     PlusOutlined,
