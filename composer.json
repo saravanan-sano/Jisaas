@@ -20,7 +20,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/cashier": "^12.2",
-        "laravel/framework": "^9.0",
+        "laravel/framework": "^9.19",
         "laravel/tinker": "^2.5",
         "laravelcollective/html": "^6.3",
         "league/flysystem-aws-s3-v3": "^3.27",
