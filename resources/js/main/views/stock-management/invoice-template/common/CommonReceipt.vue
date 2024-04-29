@@ -510,6 +510,7 @@ import {
 } from "@ant-design/icons-vue";
 import common from "../../../../../common/composable/common";
 import QrcodeVue from "qrcode.vue";
+import _ from "lodash-es"
 export default defineComponent({
     components: {
         PrinterOutlined,

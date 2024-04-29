@@ -919,6 +919,7 @@ import common from "../../../../../common/composable/common";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 const posInvoiceCssUrl = window.config.pos_invoice_css;
+import _ from "lodash-es"
 
 export default defineComponent({
     props: ["visible", "order", "routeBack"],

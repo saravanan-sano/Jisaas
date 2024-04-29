@@ -68,4 +68,4 @@ async function bootstrap() {
     app.mount("#app");
 }
 
-bootstrap();
+export default bootstrap();

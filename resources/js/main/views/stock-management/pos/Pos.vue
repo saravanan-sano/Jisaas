@@ -2522,7 +2522,6 @@ import {
     reactive,
     toRefs,
     nextTick,
-    router,
     watch,
     computed,
     onBeforeUnmount,
