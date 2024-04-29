@@ -8,8 +8,8 @@ import { checkUserPermission } from "../scripts/functions";
 import dayjs from "dayjs";
 
 moment.suppressDeprecationWarnings = true;
-var utc = require("dayjs/plugin/utc");
-var timezone = require("dayjs/plugin/timezone");
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
 dayjs.extend(utc);
 dayjs.extend(timezone);
 

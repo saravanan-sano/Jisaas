@@ -567,7 +567,7 @@ export default defineComponent({
                         })
                         .catch((error) => {
                             loading.value = false;
-                            grecaptcha.reset(recaptchaId);
+                            grecaptcha.reset(recaptchaId.value);
                             grecaptchaResponse.value = "";
 
                             onRequestSend.value.error =
@@ -575,7 +575,7 @@ export default defineComponent({
                         });
                 })
                 .catch((error) => {
-                    grecaptcha.reset(recaptchaId);
+                    grecaptcha.reset(recaptchaId.value);
                     grecaptchaResponse.value = "";
                     loading.value = false;
                 });
@@ -782,7 +782,7 @@ export default defineComponent({
             });
 
             await recaptchaScriptLoaded;
-            recaptchaId = grecaptcha.render("recaptcha", {
+            recaptchaId.value = grecaptcha.render("recaptcha", {
                 sitekey: "6Lf3icEmAAAAAKvPB8CVHqcAEiCDzx4iOlv83Lr1",
                 callback: function (response) {
                     grecaptchaResponse.value = response;
@@ -827,6 +827,7 @@ export default defineComponent({
             Countries,
             countryCode,
             innerWidth: window.innerWidth,
+            recaptchaId
         };
     },
 });

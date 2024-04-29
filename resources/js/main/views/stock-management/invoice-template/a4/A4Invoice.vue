@@ -856,6 +856,7 @@ import { PrinterOutlined, FilePdfOutlined } from "@ant-design/icons-vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 import html2pdf from "html2pdf.js";
+import _ from "lodash-es"
 import common from "../../../../../common/composable/common";
 
 export default defineComponent({

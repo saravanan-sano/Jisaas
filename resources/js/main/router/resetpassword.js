@@ -1,4 +1,4 @@
-import Resetpassword from "../views/auth/ResetPassword"
+import Resetpassword from "../views/auth/ResetPassword.vue"
 
 export default [
     {

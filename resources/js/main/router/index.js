@@ -39,27 +39,34 @@ const checkAllRoutes = (currentModuleRoutes, allModule) => {
 
 allInstalledModules.forEach((allModule) => {
     const allModuleName = allModule.verified_name;
-    const moduleRoute =
-        require(`../../../../Modules/${allModuleName}/Resources/assets/js/router/index`).default;
-    var currentModuleRoutes = [...moduleRoute];
+    import(
+        `../../../../Modules/${allModuleName}/Resources/assets/js/router/index.js` /* @vite-ignore */
+    ).then((module) => {
+        const moduleRoute = module.default;
+        let currentModuleRoutes = [...moduleRoute];
 
-    checkAllRoutes(currentModuleRoutes, allModuleName);
+        checkAllRoutes(currentModuleRoutes, allModuleName);
 
-    allModulesRoutes.push(...currentModuleRoutes);
+        allModulesRoutes.push(...currentModuleRoutes);
+    });
 });
 
 // Including SuperAdmin Routes
-var superAdminRoutes = [];
-var subscriptionRoutes = [];
+let superAdminRoutes = [];
+let subscriptionRoutes = [];
 const superadminRouteFilePath = appType == "multiple" ? "superadmin" : "";
 if (appType == "multiple") {
-    const newSuperAdminRoute =
-        require(`../../${superadminRouteFilePath}/router/index`).default;
-    superAdminRoutes = [...newSuperAdminRoute];
+    import(
+        `../../${superadminRouteFilePath}/router/index.js` /* @vite-ignore */
+    ).then((module) => {
+        superAdminRoutes = [...module.default];
+    });
 
-    const newsubscriptionRoute =
-        require(`../../${superadminRouteFilePath}/router/admin/index`).default;
-    subscriptionRoutes = [...newsubscriptionRoute];
+    import(
+        `../../${superadminRouteFilePath}/router/admin/index.js` /* @vite-ignore */
+    ).then((module) => {
+        subscriptionRoutes = [...module.default];
+    });
 }
 
 const isAdminCompanySetupCorrect = () => {

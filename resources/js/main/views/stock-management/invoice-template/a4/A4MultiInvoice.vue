@@ -844,6 +844,7 @@ import common from "../../../../../common/composable/common";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 import html2pdf from "html2pdf.js";
+import _ from "lodash-es"
 
 export default defineComponent({
     props: ["visible", "order", "routeBack"],

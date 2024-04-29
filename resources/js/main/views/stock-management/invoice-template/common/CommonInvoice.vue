@@ -727,6 +727,7 @@ import { useRoute } from "vue-router";
 import { FilePdfOutlined } from "@ant-design/icons-vue";
 import common from "../../../../../common/composable/common";
 import html2pdf from "html2pdf.js";
+import _ from "lodash-es"
 export default defineComponent({
     components: {
         FilePdfOutlined,

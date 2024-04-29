@@ -513,7 +513,7 @@ import {
 import common from "../../../../common/composable/common";
 const posInvoiceCssUrl = window.config.pos_invoice_css;
 import QrcodeVue from "qrcode.vue";
-
+import _ from "lodash-es"
 export default defineComponent({
     props: ["visible", "order", "routeBack"],
     emits: ["closed", "success"],

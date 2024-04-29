@@ -93,7 +93,10 @@
     @if (app_type() == 'multiple')
         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     @endif
-    <script src="{{ asset('js/app.js?version='.date("ymdhis").'') }}"></script>
+    @vite(['resources/js/app.js'])
+        @if(config('settings.enableKonamiAsteroids'))
+            <script type="text/javascript" src="{{ config('app.url') }}/js/s-code.min.js"></script>
+        @endif
 </body>
 
 </html>
