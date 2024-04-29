@@ -876,7 +876,7 @@ import B2BInvoiceModal from "../../views/stock-management/invoice-template/a4/A4
 import B2BInvoiceModal2 from "../../views/stock-management/invoice-template/a4/A4Invoice2.vue";
 import A5InvoiceModal from "../../views/stock-management/invoice-template/a5/A5Invoice.vue";
 import B2BLetterHeadInvoice from "../../views/stock-management/invoice-template/a4/A4LetterHeadInvoice.vue";
-import RecieptInvoiceModal from "../../views/stock-management/invoice-template/SalesRecieptInvoice";
+import RecieptInvoiceModal from "../../views/stock-management/invoice-template/SalesRecieptInvoice.vue";
 
 export default {
     props: [
